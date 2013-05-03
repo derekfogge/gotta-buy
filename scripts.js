@@ -10,7 +10,6 @@ $(document).ready(function(){
 		console.log('list item added');
 		return false;
 	});
-});
 
 	//listen for clicks on list items
 	$(document).on('click', '#shoppinglist li', function () {
@@ -24,4 +23,4 @@ $(document).ready(function(){
 		console.log('list cleared');
 	});
 
-
+});
