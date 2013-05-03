@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="gottabuy shopping list app for thinkful">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gotta Buy...</title>
+
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+				<div class="wrapper">
+					<div class="main">
+						<h1>Gotta Buy...</h1>
+						<form>
+							<input type="text" id="listbuilder" placeholder="enter items here" />
+							<input type="submit" id="listbuilder-btn" value="submit" />
+						</form>
+
+							<ul id="shoppinglist">
+								<li>item i wanna buy</li>
+								<li class="bought">item i already bought</li>
+							</ul>
+
+							<div id="clear-btn" class="btn">clear list</div>
+
+
+					</div><!-- end main -->
+
+				</div><!-- end wrapper -->
+
+			<script src="jquery-1.9.1.min.js"></script>
+			<script src="scripts.js"></script>
+		</body>
+</html>
