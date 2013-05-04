@@ -1,9 +1,14 @@
 $(document).ready(function(){
 	console.log('ready');
 
-	//add items to list when text is submitted
+	//add items to list when text is submitted, and wrap
+	//them in a link to amazon
 	$(document).on('click', '#listbuilder-btn', function () {
-		$('#shoppinglist').append('<li>' + $('#listbuilder').val() + '</li>');
+
+		var listItem = $('#listbuilder').val();
+
+		$('#shoppinglist').append('<li><a target="_blank" href="http://www.amazon.com/s/keywords=' + listItem + '"><img class="buy" src="buy.png" /></a>' + listItem + '</li>');
+
 		$('#listbuilder').val('');
 
 
