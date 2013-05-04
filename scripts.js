@@ -7,6 +7,7 @@ $(document).ready(function(){
 
 		var listItem = $('#listbuilder').val();
 
+
 		$('#shoppinglist').append('<li><a target="_blank" href="http://www.amazon.com/s/keywords=' + listItem + '"><img class="buy" src="buy.png" /></a>' + listItem + '</li>');
 
 		$('#listbuilder').val('');
