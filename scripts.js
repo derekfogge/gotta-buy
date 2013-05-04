@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	console.log('ready');
 
-	//add items to list when text is submitted, and wrap
-	//them in a link to amazon
+	//add items to list when text is submitted, and add
+	// an amazon search link to them
 	$(document).on('click', '#listbuilder-btn', function () {
 
 		var listItem = $('#listbuilder').val();
