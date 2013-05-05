@@ -6,7 +6,7 @@ html, body{
 
 body{
 	margin:0 auto;
-	background-color: #deedee;
+	background: #deedee url('squairy_light.jpg');
 	font-size: 20px;
 }
 
@@ -35,11 +35,16 @@ ul{
 	line-height: 2;
 	width: 50%;
 	text-align: center;
+	min-height: 100px;
 }
 
 li{
 	cursor: pointer;
 	text-align: left;
+	border-bottom: 2px dotted black;
+	line-height: 1.26;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 .bought{
@@ -51,21 +56,58 @@ li{
 	margin: 0 auto;
 	font-size: 20px;
 	font-weight: bold;
-	padding:6px 0;
-	color:white;
-	background-color:red;
-	border-radius: 4px;
 	cursor: pointer;
+	position:relative;
+	text-shadow: 0 1px 2px black;
+	color:#FFF;
+	display:block;
+	text-decoration:none;
+
+	border-radius:5px;
+	border:solid 1px #D94E3B;
+	background:#cb3b27;
+
+	padding:5px 10px;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+        box-shadow: 0px 7px 0px #84261a;
+
 }
+
+.btn:active{
+  box-shadow: 0px 2px 0px #84261a;
+  position:relative;
+  top:7px;
+
+}
+
+.btn:before {
+  position: absolute;
+  display: block;
+  content: ' ';
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+}
+
 
 .buy{
 	position: absolute;
-	margin: 10px -64px 0;
+	margin: 3px -58px 0;
 }
 
 
 @media only screen and (max-width : 480px) {
+	html, body{
+		overflow-y: auto;
+	}
 	h1{
 		font-size: 60px;
+	}
+	.buy{
+		position: relative;
+		margin: 3px 12px 0 -50px;
 	}
 }

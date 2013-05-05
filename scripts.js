@@ -7,14 +7,18 @@ $(document).ready(function(){
 
 		var listItem = $('#listbuilder').val();
 
+		if ($.trim(listItem) == '' ) {
+			return false;
+		}
+		else {
+			$('#shoppinglist').append('<li><a target="_blank" href="http://www.amazon.com/s/keywords=' + listItem + '"><img class="buy" src="buy.png" /></a>' + listItem + '</li>');
 
-		$('#shoppinglist').append('<li><a target="_blank" href="http://www.amazon.com/s/keywords=' + listItem + '"><img class="buy" src="buy.png" /></a>' + listItem + '</li>');
-
-		$('#listbuilder').val('');
+			$('#listbuilder').val('');
 
 
-		console.log('list item added');
-		return false;
+			console.log('list item added');
+			return false;
+		}
 	});
 
 	//listen for clicks on list items
